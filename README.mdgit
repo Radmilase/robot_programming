@@ -1,0 +1,2 @@
+# robot_programming initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:Radmilase/robot_programming.gitgit push -u origin main
+# robot_programming initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:Radmilase/robot_programming.gitgit push -u origin main
