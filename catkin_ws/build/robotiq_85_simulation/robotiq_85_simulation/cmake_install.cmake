@@ -1,8 +1,8 @@
-# Install script for directory: /home/rad/catkin_ws/src/robotiq_85_simulation/robotiq_85_simulation
+# Install script for directory: /home/rad/robot_programming/catkin_ws/src/robotiq_85_simulation/robotiq_85_simulation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rad/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rad/robot_programming/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_85_simulation" TYPE FILE FILES "/home/rad/catkin_ws/src/robotiq_85_simulation/robotiq_85_simulation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_85_simulation" TYPE FILE FILES "/home/rad/robot_programming/catkin_ws/src/robotiq_85_simulation/robotiq_85_simulation/package.xml")
 endif()
 

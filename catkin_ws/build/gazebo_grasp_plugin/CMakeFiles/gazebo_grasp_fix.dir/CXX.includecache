@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rad/catkin_ws/src/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
+/home/rad/robot_programming/catkin_ws/src/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -22,7 +22,7 @@ stdio.h
 gazebo_grasp_plugin/GazeboGraspGripper.h
 -
 
-/home/rad/catkin_ws/src/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
+/home/rad/robot_programming/catkin_ws/src/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -36,7 +36,7 @@ gazebo/transport/TransportTypes.hh
 stdio.h
 -
 
-/home/rad/catkin_ws/src/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
+/home/rad/robot_programming/catkin_ws/src/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -54,7 +54,7 @@ stdio.h
 gazebo_grasp_plugin/GazeboGraspFix.h
 -
 
-/home/rad/catkin_ws/src/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
+/home/rad/robot_programming/catkin_ws/src/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
 boost/bind.hpp
 -
 gazebo/gazebo.hh

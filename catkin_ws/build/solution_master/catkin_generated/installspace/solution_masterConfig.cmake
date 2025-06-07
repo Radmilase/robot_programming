@@ -67,14 +67,14 @@ set(solution_master_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(solution_master_SOURCE_PREFIX /home/rad/catkin_ws/src/solution_master)
-  set(solution_master_DEVEL_PREFIX /home/rad/catkin_ws/devel)
+  set(solution_master_SOURCE_PREFIX /home/rad/robot_programming/catkin_ws/src/solution_master)
+  set(solution_master_DEVEL_PREFIX /home/rad/robot_programming/catkin_ws/devel)
   set(solution_master_INSTALL_PREFIX "")
   set(solution_master_PREFIX ${solution_master_DEVEL_PREFIX})
 else()
   set(solution_master_SOURCE_PREFIX "")
   set(solution_master_DEVEL_PREFIX "")
-  set(solution_master_INSTALL_PREFIX /home/rad/catkin_ws/install)
+  set(solution_master_INSTALL_PREFIX /home/rad/robot_programming/catkin_ws/install)
   set(solution_master_PREFIX ${solution_master_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/rad/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rad/robot_programming/catkin_ws/install/lib;/home/rad/robot_programming/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

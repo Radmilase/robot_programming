@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rad/catkin_ws/devel/lib/solution_master/example_node"
-  "/home/rad/catkin_ws/devel/lib/solution_master/example_node.pdb"
+  "/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node"
+  "/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node.pdb"
   "CMakeFiles/example_node.dir/src/example.cpp.o"
 )
 

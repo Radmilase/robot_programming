@@ -1,4 +1,4 @@
-prefix=/home/rad/catkin_ws/install
+prefix=/home/rad/robot_programming/catkin_ws/install
 
 Name: gazebo_grasp_plugin
 Description: Description of gazebo_grasp_plugin

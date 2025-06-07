@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rad/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/rad/robot_programming/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rad/catkin_ws/build
+CMAKE_BINARY_DIR = /home/rad/robot_programming/catkin_ws/build
 
 # Utility rule file for clean_test_results_ur_description.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rad/catkin_ws/build
 include ur_description/CMakeFiles/clean_test_results_ur_description.dir/progress.make
 
 ur_description/CMakeFiles/clean_test_results_ur_description:
-	cd /home/rad/catkin_ws/build/ur_description && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/rad/catkin_ws/build/test_results/ur_description
+	cd /home/rad/robot_programming/catkin_ws/build/ur_description && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/rad/robot_programming/catkin_ws/build/test_results/ur_description
 
 clean_test_results_ur_description: ur_description/CMakeFiles/clean_test_results_ur_description
 clean_test_results_ur_description: ur_description/CMakeFiles/clean_test_results_ur_description.dir/build.make
@@ -67,10 +67,10 @@ ur_description/CMakeFiles/clean_test_results_ur_description.dir/build: clean_tes
 .PHONY : ur_description/CMakeFiles/clean_test_results_ur_description.dir/build
 
 ur_description/CMakeFiles/clean_test_results_ur_description.dir/clean:
-	cd /home/rad/catkin_ws/build/ur_description && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_ur_description.dir/cmake_clean.cmake
+	cd /home/rad/robot_programming/catkin_ws/build/ur_description && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_ur_description.dir/cmake_clean.cmake
 .PHONY : ur_description/CMakeFiles/clean_test_results_ur_description.dir/clean
 
 ur_description/CMakeFiles/clean_test_results_ur_description.dir/depend:
-	cd /home/rad/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rad/catkin_ws/src /home/rad/catkin_ws/src/ur_description /home/rad/catkin_ws/build /home/rad/catkin_ws/build/ur_description /home/rad/catkin_ws/build/ur_description/CMakeFiles/clean_test_results_ur_description.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rad/robot_programming/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rad/robot_programming/catkin_ws/src /home/rad/robot_programming/catkin_ws/src/ur_description /home/rad/robot_programming/catkin_ws/build /home/rad/robot_programming/catkin_ws/build/ur_description /home/rad/robot_programming/catkin_ws/build/ur_description/CMakeFiles/clean_test_results_ur_description.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ur_description/CMakeFiles/clean_test_results_ur_description.dir/depend
 

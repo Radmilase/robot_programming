@@ -1,8 +1,8 @@
-# Install script for directory: /home/rad/catkin_ws/src/master_scene
+# Install script for directory: /home/rad/robot_programming/catkin_ws/src/master_scene
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rad/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rad/robot_programming/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rad/catkin_ws/build/master_scene/catkin_generated/installspace/master_scene.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rad/robot_programming/catkin_ws/build/master_scene/catkin_generated/installspace/master_scene.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/master_scene/cmake" TYPE FILE FILES
-    "/home/rad/catkin_ws/build/master_scene/catkin_generated/installspace/master_sceneConfig.cmake"
-    "/home/rad/catkin_ws/build/master_scene/catkin_generated/installspace/master_sceneConfig-version.cmake"
+    "/home/rad/robot_programming/catkin_ws/build/master_scene/catkin_generated/installspace/master_sceneConfig.cmake"
+    "/home/rad/robot_programming/catkin_ws/build/master_scene/catkin_generated/installspace/master_sceneConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/master_scene" TYPE FILE FILES "/home/rad/catkin_ws/src/master_scene/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/master_scene" TYPE FILE FILES "/home/rad/robot_programming/catkin_ws/src/master_scene/package.xml")
 endif()
 

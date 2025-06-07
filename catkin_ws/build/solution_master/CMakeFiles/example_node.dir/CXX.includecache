@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rad/catkin_ws/src/solution_master/include/master/example.hpp
+/home/rad/robot_programming/catkin_ws/src/solution_master/include/master/example.hpp
 
-/home/rad/catkin_ws/src/solution_master/src/example.cpp
+/home/rad/robot_programming/catkin_ws/src/solution_master/src/example.cpp
 ros/ros.h
 -
 iostream
 -
 example.hpp
-/home/rad/catkin_ws/src/solution_master/src/example.hpp
+/home/rad/robot_programming/catkin_ws/src/solution_master/src/example.hpp
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/rad/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/rad/catkin_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/rad/catkin_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/rad/catkin_ws/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/rad/robot_programming/catkin_ws/build'
+export ROS_PACKAGE_PATH='/home/rad/robot_programming/catkin_ws/src:/opt/ros/noetic/share'

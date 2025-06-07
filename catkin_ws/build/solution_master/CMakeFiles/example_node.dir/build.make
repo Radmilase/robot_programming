@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rad/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/rad/robot_programming/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rad/catkin_ws/build
+CMAKE_BINARY_DIR = /home/rad/robot_programming/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include solution_master/CMakeFiles/example_node.dir/depend.make
@@ -58,17 +58,17 @@ include solution_master/CMakeFiles/example_node.dir/progress.make
 include solution_master/CMakeFiles/example_node.dir/flags.make
 
 solution_master/CMakeFiles/example_node.dir/src/example.cpp.o: solution_master/CMakeFiles/example_node.dir/flags.make
-solution_master/CMakeFiles/example_node.dir/src/example.cpp.o: /home/rad/catkin_ws/src/solution_master/src/example.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rad/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object solution_master/CMakeFiles/example_node.dir/src/example.cpp.o"
-	cd /home/rad/catkin_ws/build/solution_master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example_node.dir/src/example.cpp.o -c /home/rad/catkin_ws/src/solution_master/src/example.cpp
+solution_master/CMakeFiles/example_node.dir/src/example.cpp.o: /home/rad/robot_programming/catkin_ws/src/solution_master/src/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object solution_master/CMakeFiles/example_node.dir/src/example.cpp.o"
+	cd /home/rad/robot_programming/catkin_ws/build/solution_master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example_node.dir/src/example.cpp.o -c /home/rad/robot_programming/catkin_ws/src/solution_master/src/example.cpp
 
 solution_master/CMakeFiles/example_node.dir/src/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example_node.dir/src/example.cpp.i"
-	cd /home/rad/catkin_ws/build/solution_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rad/catkin_ws/src/solution_master/src/example.cpp > CMakeFiles/example_node.dir/src/example.cpp.i
+	cd /home/rad/robot_programming/catkin_ws/build/solution_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rad/robot_programming/catkin_ws/src/solution_master/src/example.cpp > CMakeFiles/example_node.dir/src/example.cpp.i
 
 solution_master/CMakeFiles/example_node.dir/src/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example_node.dir/src/example.cpp.s"
-	cd /home/rad/catkin_ws/build/solution_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rad/catkin_ws/src/solution_master/src/example.cpp -o CMakeFiles/example_node.dir/src/example.cpp.s
+	cd /home/rad/robot_programming/catkin_ws/build/solution_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rad/robot_programming/catkin_ws/src/solution_master/src/example.cpp -o CMakeFiles/example_node.dir/src/example.cpp.s
 
 # Object files for target example_node
 example_node_OBJECTS = \
@@ -77,39 +77,39 @@ example_node_OBJECTS = \
 # External object files for target example_node
 example_node_EXTERNAL_OBJECTS =
 
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/src/example.cpp.o
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/build.make
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libroscpp.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librostime.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/rad/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rad/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rad/catkin_ws/devel/lib/solution_master/example_node"
-	cd /home/rad/catkin_ws/build/solution_master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_node.dir/link.txt --verbose=$(VERBOSE)
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/src/example.cpp.o
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/build.make
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libroscpp.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/librostime.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node: solution_master/CMakeFiles/example_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node"
+	cd /home/rad/robot_programming/catkin_ws/build/solution_master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-solution_master/CMakeFiles/example_node.dir/build: /home/rad/catkin_ws/devel/lib/solution_master/example_node
+solution_master/CMakeFiles/example_node.dir/build: /home/rad/robot_programming/catkin_ws/devel/lib/solution_master/example_node
 
 .PHONY : solution_master/CMakeFiles/example_node.dir/build
 
 solution_master/CMakeFiles/example_node.dir/clean:
-	cd /home/rad/catkin_ws/build/solution_master && $(CMAKE_COMMAND) -P CMakeFiles/example_node.dir/cmake_clean.cmake
+	cd /home/rad/robot_programming/catkin_ws/build/solution_master && $(CMAKE_COMMAND) -P CMakeFiles/example_node.dir/cmake_clean.cmake
 .PHONY : solution_master/CMakeFiles/example_node.dir/clean
 
 solution_master/CMakeFiles/example_node.dir/depend:
-	cd /home/rad/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rad/catkin_ws/src /home/rad/catkin_ws/src/solution_master /home/rad/catkin_ws/build /home/rad/catkin_ws/build/solution_master /home/rad/catkin_ws/build/solution_master/CMakeFiles/example_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rad/robot_programming/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rad/robot_programming/catkin_ws/src /home/rad/robot_programming/catkin_ws/src/solution_master /home/rad/robot_programming/catkin_ws/build /home/rad/robot_programming/catkin_ws/build/solution_master /home/rad/robot_programming/catkin_ws/build/solution_master/CMakeFiles/example_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : solution_master/CMakeFiles/example_node.dir/depend
 

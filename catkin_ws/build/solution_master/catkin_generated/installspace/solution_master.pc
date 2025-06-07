@@ -1,4 +1,4 @@
-prefix=/home/rad/catkin_ws/install
+prefix=/home/rad/robot_programming/catkin_ws/install
 
 Name: solution_master
 Description: Description of solution_master
