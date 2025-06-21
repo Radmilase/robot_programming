@@ -5,6 +5,8 @@ import cv2
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
 from cv_bridge import CvBridge
+from ur_perception.msg import DetectedObject
+
 
 from ultralytics import YOLO
 
@@ -25,6 +27,12 @@ class YOLOv11ClassifierNode:
         self.result_image_pub = rospy.Publisher("/yolo_result_image", Image, queue_size=1)
 
         rospy.loginfo("YOLOv11 Object Classifier запущен и ждёт картинки 🚀")
+        self.bbox_pub = rospy.Publisher("/detected_object_bbox", DetectedObject, queue_size=10)
+        #print(f"Publishing bbox: {label} ({x1},{y1},{x2},{y2}) conf={conf}")
+
+
+
+        
 
     def image_callback(self, msg):
         try:
@@ -52,6 +60,16 @@ class YOLOv11ClassifierNode:
                 # Нарисовать подпись
                 cv2.putText(result_frame, f'{label} {conf:.2f}', (x1, y1-10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
+                
+
+                msg = DetectedObject()
+                msg.label = label
+                msg.confidence = conf
+                msg.x1 = x1
+                msg.y1 = y1
+                msg.x2 = x2
+                msg.y2 = y2
+                self.bbox_pub.publish(msg)
 
             # Публикуем самый уверенный класс (можно убрать если не надо)
             best_idx = boxes.conf.argmax().item()

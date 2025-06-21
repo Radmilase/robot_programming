@@ -398,7 +398,7 @@ example_node: cmake_check_build_system
 
 # fast build rule for target.
 example_node/fast:
-	$(MAKE) -f solution_master/CMakeFiles/example_node.dir/build.make solution_master/CMakeFiles/example_node.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/example_node.dir/build.make solution_task/CMakeFiles/example_node.dir/build
 .PHONY : example_node/fast
 
 #=============================================================================
@@ -411,7 +411,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -424,7 +424,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -437,7 +437,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -450,7 +450,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -463,7 +463,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -476,7 +476,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -489,7 +489,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -502,7 +502,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -515,7 +515,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -528,7 +528,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -541,7 +541,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -554,7 +554,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -567,7 +567,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -580,7 +580,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -593,7 +593,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1831,6 +1831,162 @@ _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml/fast:
 	$(MAKE) -f ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/build.make ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/build
 .PHONY : _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml/fast
 
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages
+
+# Build rule for target.
+ur_perception_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages
+.PHONY : ur_perception_generate_messages
+
+# fast build rule for target.
+ur_perception_generate_messages/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build
+.PHONY : ur_perception_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages_lisp
+
+# Build rule for target.
+ur_perception_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages_lisp
+.PHONY : ur_perception_generate_messages_lisp
+
+# fast build rule for target.
+ur_perception_generate_messages_lisp/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build
+.PHONY : ur_perception_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages_cpp
+
+# Build rule for target.
+ur_perception_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages_cpp
+.PHONY : ur_perception_generate_messages_cpp
+
+# fast build rule for target.
+ur_perception_generate_messages_cpp/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build
+.PHONY : ur_perception_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages_eus
+
+# Build rule for target.
+ur_perception_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages_eus
+.PHONY : ur_perception_generate_messages_eus
+
+# fast build rule for target.
+ur_perception_generate_messages_eus/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build
+.PHONY : ur_perception_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _ur_perception_generate_messages_check_deps_DetectedObject
+
+# Build rule for target.
+_ur_perception_generate_messages_check_deps_DetectedObject: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ur_perception_generate_messages_check_deps_DetectedObject
+.PHONY : _ur_perception_generate_messages_check_deps_DetectedObject
+
+# fast build rule for target.
+_ur_perception_generate_messages_check_deps_DetectedObject/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build.make ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build
+.PHONY : _ur_perception_generate_messages_check_deps_DetectedObject/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_geneus
+
+# Build rule for target.
+ur_perception_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_geneus
+.PHONY : ur_perception_geneus
+
+# fast build rule for target.
+ur_perception_geneus/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_geneus.dir/build.make ur_perception/CMakeFiles/ur_perception_geneus.dir/build
+.PHONY : ur_perception_geneus/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_genlisp
+
+# Build rule for target.
+ur_perception_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_genlisp
+.PHONY : ur_perception_genlisp
+
+# fast build rule for target.
+ur_perception_genlisp/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genlisp.dir/build.make ur_perception/CMakeFiles/ur_perception_genlisp.dir/build
+.PHONY : ur_perception_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages_nodejs
+
+# Build rule for target.
+ur_perception_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages_nodejs
+.PHONY : ur_perception_generate_messages_nodejs
+
+# fast build rule for target.
+ur_perception_generate_messages_nodejs/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build
+.PHONY : ur_perception_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_gencpp
+
+# Build rule for target.
+ur_perception_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_gencpp
+.PHONY : ur_perception_gencpp
+
+# fast build rule for target.
+ur_perception_gencpp/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gencpp.dir/build.make ur_perception/CMakeFiles/ur_perception_gencpp.dir/build
+.PHONY : ur_perception_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_gennodejs
+
+# Build rule for target.
+ur_perception_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_gennodejs
+.PHONY : ur_perception_gennodejs
+
+# fast build rule for target.
+ur_perception_gennodejs/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build
+.PHONY : ur_perception_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_generate_messages_py
+
+# Build rule for target.
+ur_perception_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_generate_messages_py
+.PHONY : ur_perception_generate_messages_py
+
+# fast build rule for target.
+ur_perception_generate_messages_py/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build
+.PHONY : ur_perception_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named ur_perception_genpy
+
+# Build rule for target.
+ur_perception_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception_genpy
+.PHONY : ur_perception_genpy
+
+# fast build rule for target.
+ur_perception_genpy/fast:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genpy.dir/build.make ur_perception/CMakeFiles/ur_perception_genpy.dir/build
+.PHONY : ur_perception_genpy/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1972,6 +2128,18 @@ help:
 	@echo "... run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur5.xml"
 	@echo "... _run_tests_ur_description"
 	@echo "... _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml"
+	@echo "... ur_perception_generate_messages"
+	@echo "... ur_perception_generate_messages_lisp"
+	@echo "... ur_perception_generate_messages_cpp"
+	@echo "... ur_perception_generate_messages_eus"
+	@echo "... _ur_perception_generate_messages_check_deps_DetectedObject"
+	@echo "... ur_perception_geneus"
+	@echo "... ur_perception_genlisp"
+	@echo "... ur_perception_generate_messages_nodejs"
+	@echo "... ur_perception_gencpp"
+	@echo "... ur_perception_gennodejs"
+	@echo "... ur_perception_generate_messages_py"
+	@echo "... ur_perception_genpy"
 .PHONY : help
 
 

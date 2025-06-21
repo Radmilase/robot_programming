@@ -58,7 +58,7 @@ all: master_scene/all
 all: robotiq_85_simulation/robotiq_85_gazebo/all
 all: robotiq_85_simulation/robotiq_85_simulation/all
 all: robotiq_85_description/all
-all: solution_master/all
+all: solution_task/all
 all: gazebo_grasp_plugin/all
 all: roboticsgroup_gazebo_plugins/all
 all: ur_description/all
@@ -72,7 +72,7 @@ preinstall: master_scene/preinstall
 preinstall: robotiq_85_simulation/robotiq_85_gazebo/preinstall
 preinstall: robotiq_85_simulation/robotiq_85_simulation/preinstall
 preinstall: robotiq_85_description/preinstall
-preinstall: solution_master/preinstall
+preinstall: solution_task/preinstall
 preinstall: gazebo_grasp_plugin/preinstall
 preinstall: roboticsgroup_gazebo_plugins/preinstall
 preinstall: ur_description/preinstall
@@ -91,7 +91,7 @@ clean: master_scene/clean
 clean: robotiq_85_simulation/robotiq_85_gazebo/clean
 clean: robotiq_85_simulation/robotiq_85_simulation/clean
 clean: robotiq_85_description/clean
-clean: solution_master/clean
+clean: solution_task/clean
 clean: gazebo_grasp_plugin/clean
 clean: roboticsgroup_gazebo_plugins/clean
 clean: ur_description/clean
@@ -336,37 +336,37 @@ robotiq_85_simulation/robotiq_85_simulation/clean:
 .PHONY : robotiq_85_simulation/robotiq_85_simulation/clean
 
 #=============================================================================
-# Directory level rules for directory solution_master
+# Directory level rules for directory solution_task
 
 # Recursive "all" directory target.
-solution_master/all: solution_master/CMakeFiles/example_node.dir/all
+solution_task/all: solution_task/CMakeFiles/example_node.dir/all
 
-.PHONY : solution_master/all
+.PHONY : solution_task/all
 
 # Recursive "preinstall" directory target.
-solution_master/preinstall:
+solution_task/preinstall:
 
-.PHONY : solution_master/preinstall
+.PHONY : solution_task/preinstall
 
 # Recursive "clean" directory target.
-solution_master/clean: solution_master/CMakeFiles/example_node.dir/clean
-solution_master/clean: solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-solution_master/clean: solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-solution_master/clean: solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-solution_master/clean: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-solution_master/clean: solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/roscpp_generate_messages_py.dir/clean
-solution_master/clean: solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-solution_master/clean: solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-solution_master/clean: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-solution_master/clean: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-solution_master/clean: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+solution_task/clean: solution_task/CMakeFiles/example_node.dir/clean
+solution_task/clean: solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+solution_task/clean: solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+solution_task/clean: solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+solution_task/clean: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+solution_task/clean: solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/roscpp_generate_messages_py.dir/clean
+solution_task/clean: solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+solution_task/clean: solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+solution_task/clean: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+solution_task/clean: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+solution_task/clean: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
-.PHONY : solution_master/clean
+.PHONY : solution_task/clean
 
 #=============================================================================
 # Directory level rules for directory ur_description
@@ -418,7 +418,7 @@ ur_description/clean: ur_description/CMakeFiles/_run_tests_ur_description_roslau
 # Directory level rules for directory ur_perception
 
 # Recursive "all" directory target.
-ur_perception/all:
+ur_perception/all: ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all
 
 .PHONY : ur_perception/all
 
@@ -428,7 +428,18 @@ ur_perception/preinstall:
 .PHONY : ur_perception/preinstall
 
 # Recursive "clean" directory target.
-ur_perception/clean:
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_geneus.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_genlisp.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_gencpp.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_gennodejs.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/clean
+ur_perception/clean: ur_perception/CMakeFiles/ur_perception_genpy.dir/clean
 
 .PHONY : ur_perception/clean
 
@@ -895,470 +906,470 @@ robotiq_85_description/CMakeFiles/clean_test_results_robotiq_85_description.dir/
 .PHONY : robotiq_85_description/CMakeFiles/clean_test_results_robotiq_85_description.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/example_node.dir
+# Target rules for target solution_task/CMakeFiles/example_node.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_py.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-solution_master/CMakeFiles/example_node.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(MAKE) -f solution_master/CMakeFiles/example_node.dir/build.make solution_master/CMakeFiles/example_node.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/example_node.dir/build.make solution_master/CMakeFiles/example_node.dir/build
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_py.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+solution_task/CMakeFiles/example_node.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f solution_task/CMakeFiles/example_node.dir/build.make solution_task/CMakeFiles/example_node.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/example_node.dir/build.make solution_task/CMakeFiles/example_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=1,2 "Built target example_node"
-.PHONY : solution_master/CMakeFiles/example_node.dir/all
+.PHONY : solution_task/CMakeFiles/example_node.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/example_node.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/example_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/example_node.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/example_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/example_node.dir/rule
+.PHONY : solution_task/CMakeFiles/example_node.dir/rule
 
 # Convenience name for target.
-example_node: solution_master/CMakeFiles/example_node.dir/rule
+example_node: solution_task/CMakeFiles/example_node.dir/rule
 
 .PHONY : example_node
 
 # clean rule for target.
-solution_master/CMakeFiles/example_node.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/example_node.dir/build.make solution_master/CMakeFiles/example_node.dir/clean
-.PHONY : solution_master/CMakeFiles/example_node.dir/clean
+solution_task/CMakeFiles/example_node.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/example_node.dir/build.make solution_task/CMakeFiles/example_node.dir/clean
+.PHONY : solution_task/CMakeFiles/example_node.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target solution_task/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build
+solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target solution_task/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build
+solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/all
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+roscpp_generate_messages_eus: solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target solution_task/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build
+solution_task/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: solution_master/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: solution_task/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_py.dir/clean
+solution_task/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_py.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 .PHONY : std_msgs_generate_messages_eus
 
 # clean rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
 # Target rules for target gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir
 
 # All Build rule for target.
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_py.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_eus.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_py.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_master/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_eus.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_py.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: solution_task/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: gazebo_grasp_plugin/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: gazebo_grasp_plugin/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/all: gazebo_grasp_plugin/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
@@ -3957,6 +3968,339 @@ _run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml: ur_desc
 ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/clean:
 	$(MAKE) -f ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/build.make ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/clean
 .PHONY : ur_description/CMakeFiles/_run_tests_ur_description_roslaunch-check_tests_roslaunch_test_ur7e.xml.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_generate_messages"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages: ur_perception/CMakeFiles/ur_perception_generate_messages.dir/rule
+
+.PHONY : ur_perception_generate_messages
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=21 "Built target ur_perception_generate_messages_lisp"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages_lisp: ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/rule
+
+.PHONY : ur_perception_generate_messages_lisp
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=18 "Built target ur_perception_generate_messages_cpp"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages_cpp: ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/rule
+
+.PHONY : ur_perception_generate_messages_cpp
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=19,20 "Built target ur_perception_generate_messages_eus"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages_eus: ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/rule
+
+.PHONY : ur_perception_generate_messages_eus
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all:
+	$(MAKE) -f ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build.make ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build.make ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target _ur_perception_generate_messages_check_deps_DetectedObject"
+.PHONY : ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/rule
+
+# Convenience name for target.
+_ur_perception_generate_messages_check_deps_DetectedObject: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/rule
+
+.PHONY : _ur_perception_generate_messages_check_deps_DetectedObject
+
+# clean rule for target.
+ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/build.make ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/clean
+.PHONY : ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_geneus.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_geneus.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_eus.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_geneus.dir/build.make ur_perception/CMakeFiles/ur_perception_geneus.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_geneus.dir/build.make ur_perception/CMakeFiles/ur_perception_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_geneus"
+.PHONY : ur_perception/CMakeFiles/ur_perception_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_geneus.dir/rule
+
+# Convenience name for target.
+ur_perception_geneus: ur_perception/CMakeFiles/ur_perception_geneus.dir/rule
+
+.PHONY : ur_perception_geneus
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_geneus.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_geneus.dir/build.make ur_perception/CMakeFiles/ur_perception_geneus.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_genlisp.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_genlisp.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_lisp.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genlisp.dir/build.make ur_perception/CMakeFiles/ur_perception_genlisp.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genlisp.dir/build.make ur_perception/CMakeFiles/ur_perception_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_genlisp"
+.PHONY : ur_perception/CMakeFiles/ur_perception_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_genlisp.dir/rule
+
+# Convenience name for target.
+ur_perception_genlisp: ur_perception/CMakeFiles/ur_perception_genlisp.dir/rule
+
+.PHONY : ur_perception_genlisp
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_genlisp.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genlisp.dir/build.make ur_perception/CMakeFiles/ur_perception_genlisp.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=22 "Built target ur_perception_generate_messages_nodejs"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages_nodejs: ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/rule
+
+.PHONY : ur_perception_generate_messages_nodejs
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_gencpp.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_gencpp.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_cpp.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gencpp.dir/build.make ur_perception/CMakeFiles/ur_perception_gencpp.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gencpp.dir/build.make ur_perception/CMakeFiles/ur_perception_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_gencpp"
+.PHONY : ur_perception/CMakeFiles/ur_perception_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_gencpp.dir/rule
+
+# Convenience name for target.
+ur_perception_gencpp: ur_perception/CMakeFiles/ur_perception_gencpp.dir/rule
+
+.PHONY : ur_perception_gencpp
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_gencpp.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gencpp.dir/build.make ur_perception/CMakeFiles/ur_perception_gencpp.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_gennodejs.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_gennodejs.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_nodejs.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_gennodejs.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_gennodejs"
+.PHONY : ur_perception/CMakeFiles/ur_perception_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_gennodejs.dir/rule
+
+# Convenience name for target.
+ur_perception_gennodejs: ur_perception/CMakeFiles/ur_perception_gennodejs.dir/rule
+
+.PHONY : ur_perception_gennodejs
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_gennodejs.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_gennodejs.dir/build.make ur_perception/CMakeFiles/ur_perception_gennodejs.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all: solution_task/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all: ur_perception/CMakeFiles/_ur_perception_generate_messages_check_deps_DetectedObject.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num=23,24 "Built target ur_perception_generate_messages_py"
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/rule
+
+# Convenience name for target.
+ur_perception_generate_messages_py: ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/rule
+
+.PHONY : ur_perception_generate_messages_py
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/build.make ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target ur_perception/CMakeFiles/ur_perception_genpy.dir
+
+# All Build rule for target.
+ur_perception/CMakeFiles/ur_perception_genpy.dir/all: ur_perception/CMakeFiles/ur_perception_generate_messages_py.dir/all
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genpy.dir/build.make ur_perception/CMakeFiles/ur_perception_genpy.dir/depend
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genpy.dir/build.make ur_perception/CMakeFiles/ur_perception_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rad/robot_programming/catkin_ws/build/CMakeFiles --progress-num= "Built target ur_perception_genpy"
+.PHONY : ur_perception/CMakeFiles/ur_perception_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+ur_perception/CMakeFiles/ur_perception_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ur_perception/CMakeFiles/ur_perception_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rad/robot_programming/catkin_ws/build/CMakeFiles 0
+.PHONY : ur_perception/CMakeFiles/ur_perception_genpy.dir/rule
+
+# Convenience name for target.
+ur_perception_genpy: ur_perception/CMakeFiles/ur_perception_genpy.dir/rule
+
+.PHONY : ur_perception_genpy
+
+# clean rule for target.
+ur_perception/CMakeFiles/ur_perception_genpy.dir/clean:
+	$(MAKE) -f ur_perception/CMakeFiles/ur_perception_genpy.dir/build.make ur_perception/CMakeFiles/ur_perception_genpy.dir/clean
+.PHONY : ur_perception/CMakeFiles/ur_perception_genpy.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

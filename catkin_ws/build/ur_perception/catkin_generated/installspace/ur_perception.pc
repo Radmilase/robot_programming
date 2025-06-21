@@ -3,6 +3,6 @@ prefix=/home/rad/robot_programming/catkin_ws/install
 Name: ur_perception
 Description: Description of ur_perception
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime std_msgs
